@@ -2,10 +2,10 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.aspire</groupId>
-	<artifactId>GridExecution</artifactId>
+	<artifactId>JunitTestsAsJar</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>GridExecution</name>
-	<description>GridExecution</description>
+	<name>JunitTestsAsJar</name>
+	<description>JunitTestsAsJar</description>
 
 	<dependencies>
 		<dependency>
@@ -101,7 +101,7 @@
 					<testSourceDirectory>src\test\java</testSourceDirectory>
 					<mainClass>test.java.*</mainClass>
 					<includes>
-						<include>**/GridExecutionJenkins.java</include>
+						<include>**/JunitTests.java</include>
 					</includes>
 				</configuration>
 			</plugin>
@@ -121,7 +121,7 @@
                         <configuration>
                             <archive>
                                 <manifest>
-                                    <mainClass>gridtest.TestMain</mainClass>
+                                    <mainClass>junittest.TestMain</mainClass>
                                 </manifest>
                             </archive>
                         </configuration>
